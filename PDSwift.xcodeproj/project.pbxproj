@@ -20,6 +20,7 @@
 		04799DEB2198E3E50078F893 /* PDMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04799DEA2198E3E50078F893 /* PDMainViewController.swift */; };
 		04799DED2198E4100078F893 /* PDAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04799DEC2198E4100078F893 /* PDAboutViewController.swift */; };
 		04799DEF2198E4760078F893 /* PDMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04799DEE2198E4760078F893 /* PDMineViewController.swift */; };
+		04799DF1219B6AB10078F893 /* PDTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04799DF0219B6AB10078F893 /* PDTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		04799DEA2198E3E50078F893 /* PDMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDMainViewController.swift; sourceTree = "<group>"; };
 		04799DEC2198E4100078F893 /* PDAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDAboutViewController.swift; sourceTree = "<group>"; };
 		04799DEE2198E4760078F893 /* PDMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDMineViewController.swift; sourceTree = "<group>"; };
+		04799DF0219B6AB10078F893 /* PDTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				04799DE62198DF160078F893 /* PDTabBarController.swift */,
 				04799DE82198E2CA0078F893 /* PDNavigationController.swift */,
+				04799DF0219B6AB10078F893 /* PDTabBar.swift */,
 				04799DCD2198DC2C0078F893 /* 首页 */,
 				04799DD22198DC2C0078F893 /* 关于 */,
 				04799DD72198DC2C0078F893 /* 我的 */,
@@ -313,6 +316,7 @@
 			files = (
 				04799DE22198DD310078F893 /* BaseNavigationController.swift in Sources */,
 				04799DBD2198DB770078F893 /* ViewController.swift in Sources */,
+				04799DF1219B6AB10078F893 /* PDTabBar.swift in Sources */,
 				04799DED2198E4100078F893 /* PDAboutViewController.swift in Sources */,
 				04799DE42198DD4F0078F893 /* BaseTabBarController.swift in Sources */,
 				04799DBB2198DB770078F893 /* AppDelegate.swift in Sources */,
