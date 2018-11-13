@@ -10,22 +10,27 @@ import UIKit
 
 class PDMainViewController: BaseViewController {
 
+    func sum(a : Int , b : Int)-> Int {
+        return a + b
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "首页"
         view.backgroundColor = UIColor.orange
-        // Do any additional setup after loading the view.
+        let sumb = {
+            print("wriggle inside your hole")
+        }
+        
+        let sumc = {(a:Int,b:Int)->Int in
+            return a * b
+        }
+        sumb()
+        print(sumc(4,5))
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
     }
-    */
-
 }
