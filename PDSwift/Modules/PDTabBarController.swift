@@ -13,8 +13,7 @@ class PDTabBarController: BaseTabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configSubviews()
-        selectedIndex = 1
-        
+        selectedIndex = 0
     }
     
     func configSubviews() {

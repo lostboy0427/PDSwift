@@ -29,8 +29,5 @@ class PDMainViewController: BaseViewController {
         print(sumc(4,5))
         
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-    }
+
 }
