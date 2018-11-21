@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046AB90721A44A1900D1092C /* PDMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046AB8F721A44A1900D1092C /* PDMineViewController.swift */; };
+		046AB90821A44A1900D1092C /* PDMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046AB8FA21A44A1900D1092C /* PDMainViewController.swift */; };
+		046AB90921A44A1900D1092C /* PDMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046AB8FD21A44A1900D1092C /* PDMessageViewController.swift */; };
+		046AB90A21A44A1900D1092C /* PDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046AB90021A44A1900D1092C /* PDNavigationController.swift */; };
+		046AB90B21A44A1900D1092C /* PDTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046AB90121A44A1900D1092C /* PDTabBarController.swift */; };
+		046AB90C21A44A1900D1092C /* PDTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046AB90321A44A1900D1092C /* PDTabBar.swift */; };
+		046AB90D21A44A1900D1092C /* PDDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046AB90621A44A1900D1092C /* PDDiscoverViewController.swift */; };
+		046AB90F21A4947C00D1092C /* PDTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046AB90E21A4947C00D1092C /* PDTableViewController.swift */; };
+		046AB91221A4988F00D1092C /* PDSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046AB91121A4988F00D1092C /* PDSignInView.swift */; };
+		046AB91421A4ADE100D1092C /* PDSignInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046AB91321A4ADE100D1092C /* PDSignInView.xib */; };
 		04799DBB2198DB770078F893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04799DBA2198DB770078F893 /* AppDelegate.swift */; };
 		04799DBD2198DB770078F893 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04799DBC2198DB770078F893 /* ViewController.swift */; };
 		04799DC02198DB770078F893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04799DBE2198DB770078F893 /* Main.storyboard */; };
@@ -15,15 +25,19 @@
 		04799DE02198DD050078F893 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04799DDF2198DD050078F893 /* BaseViewController.swift */; };
 		04799DE22198DD310078F893 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04799DE12198DD310078F893 /* BaseNavigationController.swift */; };
 		04799DE42198DD4F0078F893 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04799DE32198DD4F0078F893 /* BaseTabBarController.swift */; };
-		04799DE72198DF160078F893 /* PDTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04799DE62198DF160078F893 /* PDTabBarController.swift */; };
-		04799DE92198E2CA0078F893 /* PDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04799DE82198E2CA0078F893 /* PDNavigationController.swift */; };
-		04799DEB2198E3E50078F893 /* PDMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04799DEA2198E3E50078F893 /* PDMainViewController.swift */; };
-		04799DED2198E4100078F893 /* PDAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04799DEC2198E4100078F893 /* PDAboutViewController.swift */; };
-		04799DEF2198E4760078F893 /* PDMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04799DEE2198E4760078F893 /* PDMineViewController.swift */; };
-		04799DF1219B6AB10078F893 /* PDTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04799DF0219B6AB10078F893 /* PDTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		046AB8F721A44A1900D1092C /* PDMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDMineViewController.swift; sourceTree = "<group>"; };
+		046AB8FA21A44A1900D1092C /* PDMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDMainViewController.swift; sourceTree = "<group>"; };
+		046AB8FD21A44A1900D1092C /* PDMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDMessageViewController.swift; sourceTree = "<group>"; };
+		046AB90021A44A1900D1092C /* PDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDNavigationController.swift; sourceTree = "<group>"; };
+		046AB90121A44A1900D1092C /* PDTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDTabBarController.swift; sourceTree = "<group>"; };
+		046AB90321A44A1900D1092C /* PDTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDTabBar.swift; sourceTree = "<group>"; };
+		046AB90621A44A1900D1092C /* PDDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDDiscoverViewController.swift; sourceTree = "<group>"; };
+		046AB90E21A4947C00D1092C /* PDTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDTableViewController.swift; sourceTree = "<group>"; };
+		046AB91121A4988F00D1092C /* PDSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDSignInView.swift; sourceTree = "<group>"; };
+		046AB91321A4ADE100D1092C /* PDSignInView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDSignInView.xib; sourceTree = "<group>"; };
 		04799DB72198DB770078F893 /* PDSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04799DBA2198DB770078F893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04799DBC2198DB770078F893 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,12 +48,6 @@
 		04799DDF2198DD050078F893 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		04799DE12198DD310078F893 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		04799DE32198DD4F0078F893 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
-		04799DE62198DF160078F893 /* PDTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDTabBarController.swift; sourceTree = "<group>"; };
-		04799DE82198E2CA0078F893 /* PDNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDNavigationController.swift; sourceTree = "<group>"; };
-		04799DEA2198E3E50078F893 /* PDMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDMainViewController.swift; sourceTree = "<group>"; };
-		04799DEC2198E4100078F893 /* PDAboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDAboutViewController.swift; sourceTree = "<group>"; };
-		04799DEE2198E4760078F893 /* PDMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDMineViewController.swift; sourceTree = "<group>"; };
-		04799DF0219B6AB10078F893 /* PDTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,125 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046AB8EE21A4459000D1092C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		046AB8EF21A4459000D1092C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		046AB8F421A44A1900D1092C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				046AB8FE21A44A1900D1092C /* Main */,
+				046AB8F821A44A1900D1092C /* 首页 */,
+				046AB8FB21A44A1900D1092C /* 信息 */,
+				046AB90421A44A1900D1092C /* 发现 */,
+				046AB8F521A44A1900D1092C /* 我的 */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		046AB8F521A44A1900D1092C /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				046AB8F621A44A1900D1092C /* Controller */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		046AB8F621A44A1900D1092C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				046AB8F721A44A1900D1092C /* PDMineViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		046AB8F821A44A1900D1092C /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				046AB8F921A44A1900D1092C /* Controller */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		046AB8F921A44A1900D1092C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				046AB8FA21A44A1900D1092C /* PDMainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		046AB8FB21A44A1900D1092C /* 信息 */ = {
+			isa = PBXGroup;
+			children = (
+				046AB8FC21A44A1900D1092C /* Controller */,
+			);
+			path = "信息";
+			sourceTree = "<group>";
+		};
+		046AB8FC21A44A1900D1092C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				046AB8FD21A44A1900D1092C /* PDMessageViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		046AB8FE21A44A1900D1092C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				046AB8FF21A44A1900D1092C /* Controller */,
+				046AB90221A44A1900D1092C /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		046AB8FF21A44A1900D1092C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				046AB90021A44A1900D1092C /* PDNavigationController.swift */,
+				046AB90121A44A1900D1092C /* PDTabBarController.swift */,
+				046AB90E21A4947C00D1092C /* PDTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		046AB90221A44A1900D1092C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				046AB90321A44A1900D1092C /* PDTabBar.swift */,
+				046AB91121A4988F00D1092C /* PDSignInView.swift */,
+				046AB91321A4ADE100D1092C /* PDSignInView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		046AB90421A44A1900D1092C /* 发现 */ = {
+			isa = PBXGroup;
+			children = (
+				046AB90521A44A1900D1092C /* Controller */,
+			);
+			path = "发现";
+			sourceTree = "<group>";
+		};
+		046AB90521A44A1900D1092C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				046AB90621A44A1900D1092C /* PDDiscoverViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		04799DAE2198DB770078F893 = {
 			isa = PBXGroup;
 			children = (
@@ -72,147 +199,16 @@
 		04799DB92198DB770078F893 /* PDSwift */ = {
 			isa = PBXGroup;
 			children = (
+				046AB8F421A44A1900D1092C /* Modules */,
 				04799DDC2198DC400078F893 /* Appdelegate */,
+				046AB8EF21A4459000D1092C /* Model */,
 				04799DDE2198DCD50078F893 /* Base */,
 				04799DDD2198DC9F0078F893 /* Supporting Files */,
-				04799DCC2198DB8A0078F893 /* Modules */,
+				046AB8EE21A4459000D1092C /* Other */,
 				04799DBC2198DB770078F893 /* ViewController.swift */,
 				04799DC62198DB780078F893 /* Info.plist */,
 			);
 			path = PDSwift;
-			sourceTree = "<group>";
-		};
-		04799DCC2198DB8A0078F893 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				04799DE62198DF160078F893 /* PDTabBarController.swift */,
-				04799DE82198E2CA0078F893 /* PDNavigationController.swift */,
-				04799DF0219B6AB10078F893 /* PDTabBar.swift */,
-				04799DCD2198DC2C0078F893 /* 首页 */,
-				04799DD22198DC2C0078F893 /* 关于 */,
-				04799DD72198DC2C0078F893 /* 我的 */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		04799DCD2198DC2C0078F893 /* 首页 */ = {
-			isa = PBXGroup;
-			children = (
-				04799DCE2198DC2C0078F893 /* Controller */,
-				04799DCF2198DC2C0078F893 /* Model */,
-				04799DD02198DC2C0078F893 /* View */,
-				04799DD12198DC2C0078F893 /* Resource */,
-			);
-			path = "首页";
-			sourceTree = "<group>";
-		};
-		04799DCE2198DC2C0078F893 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				04799DEA2198E3E50078F893 /* PDMainViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		04799DCF2198DC2C0078F893 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		04799DD02198DC2C0078F893 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		04799DD12198DC2C0078F893 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
-		04799DD22198DC2C0078F893 /* 关于 */ = {
-			isa = PBXGroup;
-			children = (
-				04799DD32198DC2C0078F893 /* Controller */,
-				04799DD42198DC2C0078F893 /* Model */,
-				04799DD52198DC2C0078F893 /* View */,
-				04799DD62198DC2C0078F893 /* Resource */,
-			);
-			path = "关于";
-			sourceTree = "<group>";
-		};
-		04799DD32198DC2C0078F893 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				04799DEC2198E4100078F893 /* PDAboutViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		04799DD42198DC2C0078F893 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		04799DD52198DC2C0078F893 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		04799DD62198DC2C0078F893 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
-		04799DD72198DC2C0078F893 /* 我的 */ = {
-			isa = PBXGroup;
-			children = (
-				04799DD82198DC2C0078F893 /* Controller */,
-				04799DD92198DC2C0078F893 /* Model */,
-				04799DDA2198DC2C0078F893 /* View */,
-				04799DDB2198DC2C0078F893 /* Resource */,
-			);
-			path = "我的";
-			sourceTree = "<group>";
-		};
-		04799DD82198DC2C0078F893 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				04799DEE2198E4760078F893 /* PDMineViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		04799DD92198DC2C0078F893 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		04799DDA2198DC2C0078F893 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		04799DDB2198DC2C0078F893 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		04799DDC2198DC400078F893 /* Appdelegate */ = {
@@ -301,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046AB91421A4ADE100D1092C /* PDSignInView.xib in Resources */,
 				04799DC52198DB780078F893 /* LaunchScreen.storyboard in Resources */,
 				04799DC22198DB780078F893 /* Assets.xcassets in Resources */,
 				04799DC02198DB770078F893 /* Main.storyboard in Resources */,
@@ -314,17 +311,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046AB90821A44A1900D1092C /* PDMainViewController.swift in Sources */,
 				04799DE22198DD310078F893 /* BaseNavigationController.swift in Sources */,
+				046AB90C21A44A1900D1092C /* PDTabBar.swift in Sources */,
 				04799DBD2198DB770078F893 /* ViewController.swift in Sources */,
-				04799DF1219B6AB10078F893 /* PDTabBar.swift in Sources */,
-				04799DED2198E4100078F893 /* PDAboutViewController.swift in Sources */,
 				04799DE42198DD4F0078F893 /* BaseTabBarController.swift in Sources */,
+				046AB90A21A44A1900D1092C /* PDNavigationController.swift in Sources */,
+				046AB91221A4988F00D1092C /* PDSignInView.swift in Sources */,
+				046AB90721A44A1900D1092C /* PDMineViewController.swift in Sources */,
+				046AB90921A44A1900D1092C /* PDMessageViewController.swift in Sources */,
+				046AB90D21A44A1900D1092C /* PDDiscoverViewController.swift in Sources */,
+				046AB90B21A44A1900D1092C /* PDTabBarController.swift in Sources */,
+				046AB90F21A4947C00D1092C /* PDTableViewController.swift in Sources */,
 				04799DBB2198DB770078F893 /* AppDelegate.swift in Sources */,
 				04799DE02198DD050078F893 /* BaseViewController.swift in Sources */,
-				04799DEB2198E3E50078F893 /* PDMainViewController.swift in Sources */,
-				04799DEF2198E4760078F893 /* PDMineViewController.swift in Sources */,
-				04799DE72198DF160078F893 /* PDTabBarController.swift in Sources */,
-				04799DE92198E2CA0078F893 /* PDNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

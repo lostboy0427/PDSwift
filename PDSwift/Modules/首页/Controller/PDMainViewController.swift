@@ -8,26 +8,15 @@
 
 import UIKit
 
-class PDMainViewController: BaseViewController {
-
-    func sum(a : Int , b : Int)-> Int {
-        return a + b
-    }
+class PDMainViewController: PDTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "首页"
-        view.backgroundColor = UIColor.orange
-        let sumb = {
-            print("wriggle inside your hole")
-        }
-        
-        let sumc = {(a:Int,b:Int)->Int in
-            return a * b
-        }
-        sumb()
-        print(sumc(4,5))
         
     }
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let message = "登录后，最新、最热微博尽在掌握，不再与事实擦肩而过"
+        visitorLogInView?.setupSubviews(imageName: "visitordiscover_feed_image_house", message: message, isHome: true)
+    }
 }
