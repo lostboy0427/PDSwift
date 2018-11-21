@@ -50,7 +50,7 @@
                         <action selector="register:" destination="iN0-l3-epB" eventType="touchUpInside" id="cDX-3J-VIi"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WB5-8F-YoT">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WB5-8F-YoT" customClass="FBSDKLoginButton">
                     <rect key="frame" x="197.5" y="397" width="137.5" height="40"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="登录" backgroundImage="common_button_white_disable">

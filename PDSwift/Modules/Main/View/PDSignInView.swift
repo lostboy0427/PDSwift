@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FBSDKLoginKit
+import FBSDKCoreKit
 
 protocol PDSignInViewDelegate:NSObjectProtocol {
     func PDSignInViewRegisterDidClick()
@@ -23,6 +25,7 @@ class PDSignInView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+
     }
     
     @IBAction func register(_ sender: Any) {
