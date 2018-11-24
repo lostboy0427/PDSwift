@@ -8,10 +8,11 @@
 
 import UIKit
 
+var hasLoggedIn = (PDUserAccount != nil)
 class PDTableViewController: UITableViewController,PDSignInViewDelegate {
     var visitorLogInView: PDSignInView?
     override func loadView() {
-        if isLogIn {
+        if hasLoggedIn {
             super.loadView()
             return
         }
@@ -22,12 +23,6 @@ class PDTableViewController: UITableViewController,PDSignInViewDelegate {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: .plain, target: self, action: #selector(PDSignInViewRegisterDidClick))
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: .plain, target: self, action: #selector(PDSignInViewLogInDidClick))
-//        self.navigationController?.navigationBar.tintColor = UIColor.orange
-        
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
     }
     
     @objc func PDSignInViewRegisterDidClick() {
@@ -35,7 +30,7 @@ class PDTableViewController: UITableViewController,PDSignInViewDelegate {
     }
     
     @objc func PDSignInViewLogInDidClick() {
-        print("__FOUNDATION_NSMAPTABLE__")
+        present(UINavigationController(rootViewController: OAuthViewController()), animated: true, completion: nil)
     }
 }
 

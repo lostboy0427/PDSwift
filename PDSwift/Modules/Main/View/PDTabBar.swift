@@ -18,7 +18,6 @@ class PDTabBar: UITabBar {
         var i = 0
         for view in subviews {
             if view is UIControl && !(view is UIButton){
-                print(view)
                 view.frame = CGRect(x: CGFloat(i) * width, y: 0, width: width, height: height)
                 i += 1
                 if i == 2{

@@ -10,7 +10,6 @@ import UIKit
 
 let ScreenWith = UIScreen.main.bounds.size.width
 let ScreenHeight = UIScreen.main.bounds.size.height
-var isLogIn : Bool = false
 
 class PDTabBarController: BaseTabBarController {
     
