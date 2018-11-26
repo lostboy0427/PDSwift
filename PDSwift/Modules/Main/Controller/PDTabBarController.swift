@@ -22,7 +22,7 @@ class PDTabBarController: BaseTabBarController {
     }
     
     func configSubviews() {
-        addChildVC(PDMainViewController(),"首页","tabbar_home")
+        addChildVC(PDHomeViewController(),"首页","tabbar_home")
         addChildVC(PDMessageViewController(),"信息", "tabbar_message_center")
         addChildVC(PDDiscoverViewController(),"发现","tabbar_discover")
         addChildVC(PDMineViewController(),"我的","tabbar_profile")

@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import FBSDKLoginKit
-import FBSDKCoreKit
 
 protocol PDSignInViewDelegate:NSObjectProtocol {
     func PDSignInViewRegisterDidClick()

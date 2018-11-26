@@ -8,11 +8,10 @@
 
 import UIKit
 
-var hasLoggedIn = (PDUserAccount != nil)
 class PDTableViewController: UITableViewController,PDSignInViewDelegate {
     var visitorLogInView: PDSignInView?
     override func loadView() {
-        if hasLoggedIn {
+        if PDUserAccount != nil {
             super.loadView()
             return
         }

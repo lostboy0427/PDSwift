@@ -30,7 +30,7 @@ class OAuthViewController: UIViewController ,UIWebViewDelegate{
     }
     
     func setupBarItem() {
-        title = "微博OAuth 授权"
+        title = "OAuth登录"
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Close", style: .plain, target: self, action: #selector(close))
     }
     
@@ -67,7 +67,7 @@ class OAuthViewController: UIViewController ,UIWebViewDelegate{
         }
         return false
     }
-    
+
     func webViewDidStartLoad(_ webView: UIWebView) {
         SVProgressHUD.show()
     }
@@ -82,14 +82,14 @@ class OAuthViewController: UIViewController ,UIWebViewDelegate{
                       "grant_type":"authorization_code",
                       "code":code,
                       "redirect_uri":Weibo_Redirect_Uri]
-        UserAccount.requestAccessToken(params: params) { (userAccount, error) in
-            if(error == nil && userAccount != nil){
+        UserAccount.requestAccessToken(params: params) { (userAccount) in
+            if(userAccount != nil){
                 PDUserAccount = userAccount
                 let welcomeVc = UIStoryboard(name: "WelcomViewController", bundle: nil).instantiateInitialViewController() as! WelcomViewController
                 self.present(welcomeVc, animated: false, completion: nil)
                 return
             }
-            SVProgressHUD.showInfo(withStatus: error.debugDescription)
+            SVProgressHUD.show(withStatus: "数据加载不正确")
             return
         }
     }

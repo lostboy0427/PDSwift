@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		046AB90721A44A1900D1092C /* PDMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046AB8F721A44A1900D1092C /* PDMineViewController.swift */; };
-		046AB90821A44A1900D1092C /* PDMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046AB8FA21A44A1900D1092C /* PDMainViewController.swift */; };
+		046AB90821A44A1900D1092C /* PDHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046AB8FA21A44A1900D1092C /* PDHomeViewController.swift */; };
 		046AB90921A44A1900D1092C /* PDMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046AB8FD21A44A1900D1092C /* PDMessageViewController.swift */; };
 		046AB90A21A44A1900D1092C /* PDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046AB90021A44A1900D1092C /* PDNavigationController.swift */; };
 		046AB90B21A44A1900D1092C /* PDTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046AB90121A44A1900D1092C /* PDTabBarController.swift */; };
@@ -23,9 +23,6 @@
 		04799DE02198DD050078F893 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04799DDF2198DD050078F893 /* BaseViewController.swift */; };
 		04799DE22198DD310078F893 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04799DE12198DD310078F893 /* BaseNavigationController.swift */; };
 		04799DE42198DD4F0078F893 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04799DE32198DD4F0078F893 /* BaseTabBarController.swift */; };
-		04AF83BA21A5AA6900B608F2 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AF83B721A5AA6800B608F2 /* Bolts.framework */; };
-		04AF83BB21A5AA6900B608F2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AF83B821A5AA6900B608F2 /* FBSDKCoreKit.framework */; };
-		04AF83BC21A5AA6900B608F2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04AF83B921A5AA6900B608F2 /* FBSDKLoginKit.framework */; };
 		04AF83BF21A5D0B600B608F2 /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF83BE21A5D0B600B608F2 /* OAuthViewController.swift */; };
 		04AF83C221A5F08300B608F2 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF83C121A5F08300B608F2 /* UserAccount.swift */; };
 		04AF83D821A5F17200B608F2 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF83C421A5F17200B608F2 /* TaskDelegate.swift */; };
@@ -90,11 +87,16 @@
 		04E2A3A921A8D5C3008BA6BF /* PopPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E2A3A821A8D5C3008BA6BF /* PopPresentationController.swift */; };
 		04E2A3AC21A8D65B008BA6BF /* PDHolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E2A3AA21A8D65B008BA6BF /* PDHolderViewController.swift */; };
 		04E2A3AD21A8D65B008BA6BF /* PDHolderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E2A3AB21A8D65B008BA6BF /* PDHolderViewController.xib */; };
+		04F52DFB21A9C1730042AD09 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F52DFA21A9C1730042AD09 /* Status.swift */; };
+		04F52DFE21AAE32E0042AD09 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F52DFD21AAE32E0042AD09 /* NetworkTool.swift */; };
+		04F52E0021AB5D750042AD09 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F52DFF21AB5D750042AD09 /* User.swift */; };
+		04F52E0321AB62FF0042AD09 /* PDHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F52E0221AB62FF0042AD09 /* PDHomeCell.xib */; };
+		04F52E0521AB7D4C0042AD09 /* PDHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F52E0421AB7D4C0042AD09 /* PDHomeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		046AB8F721A44A1900D1092C /* PDMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDMineViewController.swift; sourceTree = "<group>"; };
-		046AB8FA21A44A1900D1092C /* PDMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDMainViewController.swift; sourceTree = "<group>"; };
+		046AB8FA21A44A1900D1092C /* PDHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDHomeViewController.swift; sourceTree = "<group>"; };
 		046AB8FD21A44A1900D1092C /* PDMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDMessageViewController.swift; sourceTree = "<group>"; };
 		046AB90021A44A1900D1092C /* PDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDNavigationController.swift; sourceTree = "<group>"; };
 		046AB90121A44A1900D1092C /* PDTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDTabBarController.swift; sourceTree = "<group>"; };
@@ -111,9 +113,6 @@
 		04799DDF2198DD050078F893 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		04799DE12198DD310078F893 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		04799DE32198DD4F0078F893 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
-		04AF83B721A5AA6800B608F2 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		04AF83B821A5AA6900B608F2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		04AF83B921A5AA6900B608F2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		04AF83BE21A5D0B600B608F2 /* OAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
 		04AF83C121A5F08300B608F2 /* UserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		04AF83C421A5F17200B608F2 /* TaskDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
@@ -212,6 +211,11 @@
 		04E2A3A821A8D5C3008BA6BF /* PopPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopPresentationController.swift; sourceTree = "<group>"; };
 		04E2A3AA21A8D65B008BA6BF /* PDHolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDHolderViewController.swift; sourceTree = "<group>"; };
 		04E2A3AB21A8D65B008BA6BF /* PDHolderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDHolderViewController.xib; sourceTree = "<group>"; };
+		04F52DFA21A9C1730042AD09 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		04F52DFD21AAE32E0042AD09 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
+		04F52DFF21AB5D750042AD09 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		04F52E0221AB62FF0042AD09 /* PDHomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDHomeCell.xib; sourceTree = "<group>"; };
+		04F52E0421AB7D4C0042AD09 /* PDHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDHomeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,9 +227,6 @@
 				04E2A32B21A79112008BA6BF /* Foundation.framework in Frameworks */,
 				04E2A32921A790F7008BA6BF /* MapKit.framework in Frameworks */,
 				04E2A32721A790EC008BA6BF /* ImageIO.framework in Frameworks */,
-				04AF83BA21A5AA6900B608F2 /* Bolts.framework in Frameworks */,
-				04AF83BB21A5AA6900B608F2 /* FBSDKCoreKit.framework in Frameworks */,
-				04AF83BC21A5AA6900B608F2 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,11 +236,8 @@
 		046AB8EE21A4459000D1092C /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				04F52E0121AB61890042AD09 /* Third party */,
 				04E2A38C21A794A9008BA6BF /* SDWebImage+Header.h */,
-				04E2A38D21A79DC3008BA6BF /* SVProgressHUD */,
-				04E2A32E21A79153008BA6BF /* SDWebImage */,
-				04AF83C321A5F17200B608F2 /* Alamofire */,
-				04AF83B621A5AA2E00B608F2 /* Facebook */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -247,8 +245,10 @@
 		046AB8F421A44A1900D1092C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				04799DDE2198DCD50078F893 /* Base */,
 				04E2A39621A79FA6008BA6BF /* NewFeature */,
 				04AF83BD21A5D06200B608F2 /* OAuth */,
+				04799DDC2198DC400078F893 /* Appdelegate */,
 				046AB8FE21A44A1900D1092C /* Main */,
 				046AB8F821A44A1900D1092C /* 首页 */,
 				046AB8FB21A44A1900D1092C /* 信息 */,
@@ -277,8 +277,8 @@
 		046AB8F821A44A1900D1092C /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
-				04E2A3A521A8ABDD008BA6BF /* View */,
 				046AB8F921A44A1900D1092C /* Controller */,
+				04E2A3A521A8ABDD008BA6BF /* View */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -286,7 +286,7 @@
 		046AB8F921A44A1900D1092C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				046AB8FA21A44A1900D1092C /* PDMainViewController.swift */,
+				046AB8FA21A44A1900D1092C /* PDHomeViewController.swift */,
 				04E2A3A821A8D5C3008BA6BF /* PopPresentationController.swift */,
 				04E2A3AA21A8D65B008BA6BF /* PDHolderViewController.swift */,
 				04E2A3AB21A8D65B008BA6BF /* PDHolderViewController.xib */,
@@ -376,12 +376,10 @@
 			isa = PBXGroup;
 			children = (
 				046AB8F421A44A1900D1092C /* Modules */,
-				04799DDC2198DC400078F893 /* Appdelegate */,
 				04AF83C021A5F05A00B608F2 /* Model */,
-				04799DDE2198DCD50078F893 /* Base */,
+				04F52DFC21AAE3170042AD09 /* Tool */,
 				04799DDD2198DC9F0078F893 /* Supporting Files */,
 				046AB8EE21A4459000D1092C /* Other */,
-				04799DC62198DB780078F893 /* Info.plist */,
 			);
 			path = PDSwift;
 			sourceTree = "<group>";
@@ -397,6 +395,7 @@
 		04799DDD2198DC9F0078F893 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04799DC62198DB780078F893 /* Info.plist */,
 				04799DBE2198DB770078F893 /* Main.storyboard */,
 				04799DC12198DB780078F893 /* Assets.xcassets */,
 			);
@@ -413,16 +412,6 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		04AF83B621A5AA2E00B608F2 /* Facebook */ = {
-			isa = PBXGroup;
-			children = (
-				04AF83B721A5AA6800B608F2 /* Bolts.framework */,
-				04AF83B821A5AA6900B608F2 /* FBSDKCoreKit.framework */,
-				04AF83B921A5AA6900B608F2 /* FBSDKLoginKit.framework */,
-			);
-			path = Facebook;
-			sourceTree = "<group>";
-		};
 		04AF83BD21A5D06200B608F2 /* OAuth */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +424,8 @@
 			isa = PBXGroup;
 			children = (
 				04AF83C121A5F08300B608F2 /* UserAccount.swift */,
+				04F52DFA21A9C1730042AD09 /* Status.swift */,
+				04F52DFF21AB5D750042AD09 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -569,8 +560,28 @@
 			isa = PBXGroup;
 			children = (
 				04E2A3A621A8AC01008BA6BF /* HomeTitleButton.swift */,
+				04F52E0421AB7D4C0042AD09 /* PDHomeCell.swift */,
+				04F52E0221AB62FF0042AD09 /* PDHomeCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		04F52DFC21AAE3170042AD09 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				04F52DFD21AAE32E0042AD09 /* NetworkTool.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		04F52E0121AB61890042AD09 /* Third party */ = {
+			isa = PBXGroup;
+			children = (
+				04E2A38D21A79DC3008BA6BF /* SVProgressHUD */,
+				04E2A32E21A79153008BA6BF /* SDWebImage */,
+				04AF83C321A5F17200B608F2 /* Alamofire */,
+			);
+			path = "Third party";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -632,6 +643,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04E2A39521A79DC3008BA6BF /* SVProgressHUD.bundle in Resources */,
+				04F52E0321AB62FF0042AD09 /* PDHomeCell.xib in Resources */,
 				046AB91421A4ADE100D1092C /* PDSignInView.xib in Resources */,
 				04799DC22198DB780078F893 /* Assets.xcassets in Resources */,
 				04AF83E421A5F17200B608F2 /* Info-tvOS.plist in Resources */,
@@ -651,7 +663,7 @@
 			files = (
 				04E2A37D21A79153008BA6BF /* SDAnimatedImageRep.m in Sources */,
 				04AF83DE21A5F17200B608F2 /* ParameterEncoding.swift in Sources */,
-				046AB90821A44A1900D1092C /* PDMainViewController.swift in Sources */,
+				046AB90821A44A1900D1092C /* PDHomeViewController.swift in Sources */,
 				04E2A38321A79153008BA6BF /* NSImage+WebCache.m in Sources */,
 				04799DE22198DD310078F893 /* BaseNavigationController.swift in Sources */,
 				04E2A37221A79153008BA6BF /* UIImage+ForceDecode.m in Sources */,
@@ -666,11 +678,14 @@
 				04AF83E621A5F17200B608F2 /* SessionManager.swift in Sources */,
 				04E2A37321A79153008BA6BF /* SDWebImageCodersManager.m in Sources */,
 				04E2A38921A79153008BA6BF /* UIButton+WebCache.m in Sources */,
+				04F52DFB21A9C1730042AD09 /* Status.swift in Sources */,
 				04799DE42198DD4F0078F893 /* BaseTabBarController.swift in Sources */,
 				04E2A37621A79153008BA6BF /* UIImage+GIF.m in Sources */,
 				04AF83D921A5F17200B608F2 /* MultipartFormData.swift in Sources */,
+				04F52E0021AB5D750042AD09 /* User.swift in Sources */,
 				04E2A36D21A79153008BA6BF /* UIImage+WebP.m in Sources */,
 				046AB90A21A44A1900D1092C /* PDNavigationController.swift in Sources */,
+				04F52E0521AB7D4C0042AD09 /* PDHomeCell.swift in Sources */,
 				04AF83DB21A5F17200B608F2 /* Timeline.swift in Sources */,
 				04E2A37121A79153008BA6BF /* SDWebImageFrame.m in Sources */,
 				046AB91221A4988F00D1092C /* PDSignInView.swift in Sources */,
@@ -692,6 +707,7 @@
 				04E2A3AC21A8D65B008BA6BF /* PDHolderViewController.swift in Sources */,
 				04AF83EA21A5F17200B608F2 /* SessionDelegate.swift in Sources */,
 				04E2A36F21A79153008BA6BF /* SDWebImageManager.m in Sources */,
+				04F52DFE21AAE32E0042AD09 /* NetworkTool.swift in Sources */,
 				046AB90B21A44A1900D1092C /* PDTabBarController.swift in Sources */,
 				04AF83E121A5F17200B608F2 /* Notifications.swift in Sources */,
 				04AF83E721A5F17200B608F2 /* ResponseSerialization.swift in Sources */,
@@ -857,11 +873,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U62CP85L98;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/PDSwift/Other/Facebook",
-				);
-				INFOPLIST_FILE = PDSwift/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/PDSwift/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -883,11 +896,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U62CP85L98;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/PDSwift/Other/Facebook",
-				);
-				INFOPLIST_FILE = PDSwift/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/PDSwift/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
