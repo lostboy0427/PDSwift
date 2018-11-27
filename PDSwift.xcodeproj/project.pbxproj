@@ -90,8 +90,12 @@
 		04F52DFB21A9C1730042AD09 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F52DFA21A9C1730042AD09 /* Status.swift */; };
 		04F52DFE21AAE32E0042AD09 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F52DFD21AAE32E0042AD09 /* NetworkTool.swift */; };
 		04F52E0021AB5D750042AD09 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F52DFF21AB5D750042AD09 /* User.swift */; };
-		04F52E0321AB62FF0042AD09 /* PDHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F52E0221AB62FF0042AD09 /* PDHomeCell.xib */; };
-		04F52E0521AB7D4C0042AD09 /* PDHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F52E0421AB7D4C0042AD09 /* PDHomeCell.swift */; };
+		04F52E1021AB91530042AD09 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F52E0E21AB91530042AD09 /* HomeTableViewCell.swift */; };
+		04F52E5C21AC62690042AD09 /* PDHomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F52E5B21AC62690042AD09 /* PDHomeViewController.storyboard */; };
+		04F52EDB21AC8F520042AD09 /* UIStoryboard+extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F52EDA21AC8F520042AD09 /* UIStoryboard+extention.swift */; };
+		04F52EDD21AC91240042AD09 /* PDMessageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F52EDC21AC91240042AD09 /* PDMessageViewController.storyboard */; };
+		04F52EE121AC93350042AD09 /* PDDiscoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F52EE021AC93350042AD09 /* PDDiscoverViewController.storyboard */; };
+		04F52EE321AC93540042AD09 /* PDMineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F52EE221AC93540042AD09 /* PDMineViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -214,8 +218,12 @@
 		04F52DFA21A9C1730042AD09 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		04F52DFD21AAE32E0042AD09 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		04F52DFF21AB5D750042AD09 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		04F52E0221AB62FF0042AD09 /* PDHomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDHomeCell.xib; sourceTree = "<group>"; };
-		04F52E0421AB7D4C0042AD09 /* PDHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDHomeCell.swift; sourceTree = "<group>"; };
+		04F52E0E21AB91530042AD09 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		04F52E5B21AC62690042AD09 /* PDHomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PDHomeViewController.storyboard; sourceTree = "<group>"; };
+		04F52EDA21AC8F520042AD09 /* UIStoryboard+extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+extention.swift"; sourceTree = "<group>"; };
+		04F52EDC21AC91240042AD09 /* PDMessageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PDMessageViewController.storyboard; sourceTree = "<group>"; };
+		04F52EE021AC93350042AD09 /* PDDiscoverViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PDDiscoverViewController.storyboard; sourceTree = "<group>"; };
+		04F52EE221AC93540042AD09 /* PDMineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PDMineViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				046AB8F721A44A1900D1092C /* PDMineViewController.swift */,
+				04F52EE221AC93540042AD09 /* PDMineViewController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -287,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				046AB8FA21A44A1900D1092C /* PDHomeViewController.swift */,
+				04F52E5B21AC62690042AD09 /* PDHomeViewController.storyboard */,
 				04E2A3A821A8D5C3008BA6BF /* PopPresentationController.swift */,
 				04E2A3AA21A8D65B008BA6BF /* PDHolderViewController.swift */,
 				04E2A3AB21A8D65B008BA6BF /* PDHolderViewController.xib */,
@@ -306,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				046AB8FD21A44A1900D1092C /* PDMessageViewController.swift */,
+				04F52EDC21AC91240042AD09 /* PDMessageViewController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -351,6 +362,7 @@
 			isa = PBXGroup;
 			children = (
 				046AB90621A44A1900D1092C /* PDDiscoverViewController.swift */,
+				04F52EE021AC93350042AD09 /* PDDiscoverViewController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -560,8 +572,7 @@
 			isa = PBXGroup;
 			children = (
 				04E2A3A621A8AC01008BA6BF /* HomeTitleButton.swift */,
-				04F52E0421AB7D4C0042AD09 /* PDHomeCell.swift */,
-				04F52E0221AB62FF0042AD09 /* PDHomeCell.xib */,
+				04F52E0E21AB91530042AD09 /* HomeTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -570,6 +581,7 @@
 			isa = PBXGroup;
 			children = (
 				04F52DFD21AAE32E0042AD09 /* NetworkTool.swift */,
+				04F52EDA21AC8F520042AD09 /* UIStoryboard+extention.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -642,14 +654,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F52EE121AC93350042AD09 /* PDDiscoverViewController.storyboard in Resources */,
 				04E2A39521A79DC3008BA6BF /* SVProgressHUD.bundle in Resources */,
-				04F52E0321AB62FF0042AD09 /* PDHomeCell.xib in Resources */,
 				046AB91421A4ADE100D1092C /* PDSignInView.xib in Resources */,
 				04799DC22198DB780078F893 /* Assets.xcassets in Resources */,
 				04AF83E421A5F17200B608F2 /* Info-tvOS.plist in Resources */,
 				04E2A3AD21A8D65B008BA6BF /* PDHolderViewController.xib in Resources */,
+				04F52EDD21AC91240042AD09 /* PDMessageViewController.storyboard in Resources */,
 				04E2A3A421A8681E008BA6BF /* WelcomViewController.storyboard in Resources */,
 				04799DC02198DB770078F893 /* Main.storyboard in Resources */,
+				04F52EE321AC93540042AD09 /* PDMineViewController.storyboard in Resources */,
+				04F52E5C21AC62690042AD09 /* PDHomeViewController.storyboard in Resources */,
 				04E2A3A021A846FE008BA6BF /* PDNewFeatureController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -670,6 +685,7 @@
 				046AB90C21A44A1900D1092C /* PDTabBar.swift in Sources */,
 				04AF83BF21A5D0B600B608F2 /* OAuthViewController.swift in Sources */,
 				04E2A37721A79153008BA6BF /* UIImage+MultiFormat.m in Sources */,
+				04F52EDB21AC8F520042AD09 /* UIStoryboard+extention.swift in Sources */,
 				04AF83E521A5F17200B608F2 /* Request.swift in Sources */,
 				04AF83E321A5F17200B608F2 /* Alamofire.swift in Sources */,
 				04E2A37B21A79153008BA6BF /* SDWebImageCoder.m in Sources */,
@@ -685,7 +701,6 @@
 				04F52E0021AB5D750042AD09 /* User.swift in Sources */,
 				04E2A36D21A79153008BA6BF /* UIImage+WebP.m in Sources */,
 				046AB90A21A44A1900D1092C /* PDNavigationController.swift in Sources */,
-				04F52E0521AB7D4C0042AD09 /* PDHomeCell.swift in Sources */,
 				04AF83DB21A5F17200B608F2 /* Timeline.swift in Sources */,
 				04E2A37121A79153008BA6BF /* SDWebImageFrame.m in Sources */,
 				046AB91221A4988F00D1092C /* PDSignInView.swift in Sources */,
@@ -727,6 +742,7 @@
 				04799DBB2198DB770078F893 /* AppDelegate.swift in Sources */,
 				04E2A36E21A79153008BA6BF /* MKAnnotationView+WebCache.m in Sources */,
 				04AF83DA21A5F17200B608F2 /* NetworkReachabilityManager.swift in Sources */,
+				04F52E1021AB91530042AD09 /* HomeTableViewCell.swift in Sources */,
 				04E2A38221A79153008BA6BF /* UIImageView+WebCache.m in Sources */,
 				04799DE02198DD050078F893 /* BaseViewController.swift in Sources */,
 				04E2A37821A79153008BA6BF /* SDWebImageCoderHelper.m in Sources */,

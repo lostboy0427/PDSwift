@@ -22,13 +22,14 @@ class PDTabBarController: BaseTabBarController {
     }
     
     func configSubviews() {
-        addChildVC(PDHomeViewController(),"首页","tabbar_home")
-        addChildVC(PDMessageViewController(),"信息", "tabbar_message_center")
-        addChildVC(PDDiscoverViewController(),"发现","tabbar_discover")
-        addChildVC(PDMineViewController(),"我的","tabbar_profile")
+        addChildVC("PDHomeViewController","首页","tabbar_home")
+        addChildVC("PDMessageViewController","信息", "tabbar_message_center")
+        addChildVC("PDDiscoverViewController","发现","tabbar_discover")
+        addChildVC("PDMineViewController","我的","tabbar_profile")
     }
     
-    func addChildVC(_ vc: UIViewController,_ title:String,_ imageName: String){
+    func addChildVC(_ sbName: String,_ title:String,_ imageName: String){
+        let vc = UIStoryboard.viewControllerWithStoryboard(name: sbName)
         let naviVC = PDNavigationController(rootViewController: vc)
         tabBar.tintColor = UIColor.orange
         vc.title = title

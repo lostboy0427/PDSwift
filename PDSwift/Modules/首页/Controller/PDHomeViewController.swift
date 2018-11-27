@@ -7,7 +7,6 @@
 //
 
 import UIKit
-let HomeCellIdenteifier = "HomeCell"
 class PDHomeViewController: PDTableViewController,UIViewControllerTransitioningDelegate {
     var statusArr : [Status]?{
         didSet {
@@ -17,13 +16,16 @@ class PDHomeViewController: PDTableViewController,UIViewControllerTransitioningD
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
-        
-        
         if PDUserAccount == nil {
             return
         }
-        tableView.register(PDHomeCell.classForCoder(), forCellReuseIdentifier: HomeCellIdenteifier)
+
+        tableView.estimatedRowHeight = 300
+        tableView.tableFooterView = UIView()
+        
+        SVProgressHUD.show()
         Status.loadHomeData { (dataArr) in
+            SVProgressHUD.dismiss()
             if dataArr != nil {
                 self.statusArr = dataArr
                 return
@@ -44,17 +46,17 @@ class PDHomeViewController: PDTableViewController,UIViewControllerTransitioningD
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let cell = tableView.dequeueReusableCell(withIdentifier: HomeCellIdenteifier, for: indexPath)
-        cell.textLabel?.text = statusArr![indexPath.row].text
-        if let path = statusArr![indexPath.row].thumbnail_pic {
-            let url = URL(string: path)
-            cell.imageView?.sd_setImage(with: url, completed: nil)
-        }
+         let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.cellIdentifer(status: statusArr![indexPath.row])) as! HomeTableViewCell
+       cell.status = statusArr![indexPath.row] 
         return cell
     }
     
+
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+
+        let status = statusArr![indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.cellIdentifer(status:status)) as! HomeTableViewCell
+        return cell.rowHeight(status: status)
     }
     
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
