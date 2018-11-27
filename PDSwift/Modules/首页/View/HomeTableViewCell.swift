@@ -79,7 +79,6 @@ class HomeTableViewCell: UITableViewCell {
         self.status = status
         // 刷新页面
         layoutIfNeeded()
-        print("\(bottomView.frame.maxY)*********\(bottomView.bounds.maxY)")
         return bottomView.frame.maxY
     }
     
