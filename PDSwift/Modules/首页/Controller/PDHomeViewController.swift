@@ -13,13 +13,16 @@ class PDHomeViewController: PDTableViewController,UIViewControllerTransitioningD
             tableView.reloadData()
         }
     }
+    
+    //行高缓存
+    var rowHeightCashe = NSCache<AnyObject, AnyObject>()
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
         if PDUserAccount == nil {
             return
         }
-
+        
         tableView.estimatedRowHeight = 300
         tableView.tableFooterView = UIView()
         
@@ -46,17 +49,25 @@ class PDHomeViewController: PDTableViewController,UIViewControllerTransitioningD
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.cellIdentifer(status: statusArr![indexPath.row])) as! HomeTableViewCell
-       cell.status = statusArr![indexPath.row] 
+        let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.cellIdentifer(status: statusArr![indexPath.row])) as! HomeTableViewCell
+        cell.photoBrowerDelegate = self
+        cell.status = statusArr![indexPath.row]
         return cell
     }
     
-
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-
         let status = statusArr![indexPath.row]
+        if let height = rowHeightCashe.object(forKey:"\(status.id!)" as AnyObject) {
+            print("\(height as! CGFloat)缓存行高---\(String(describing: status.id))")
+            return height as! CGFloat
+        }
+        
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.cellIdentifer(status:status)) as! HomeTableViewCell
-        return cell.rowHeight(status: status)
+        let height = cell.rowHeight(status: status)
+        rowHeightCashe.setObject(height as AnyObject, forKey:"\(status.id!)" as AnyObject)
+        return height
     }
     
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
@@ -101,8 +112,17 @@ class PDHomeViewController: PDTableViewController,UIViewControllerTransitioningD
     
 }
 
+extension PDHomeViewController: HomeTableViewCellDelegate {
+    func cellDidClick(cell: HomeTableViewCell, indexPath: IndexPath) {
+        
+        let browerVc = HomePhotoBrowerViewController()
+        browerVc.imageUrls = cell.status?.largeUrls
+        present(browerVc, animated: false, completion: nil)
+    }
+}
+
 extension UIBarButtonItem {
-   class func barButtonItem(imageName: String, selector: Selector)-> UIView {
+    class func barButtonItem(imageName: String, selector: Selector)-> UIView {
         let btn = UIButton()
         btn.setImage(UIImage(named: imageName), for: .normal)
         btn.setImage(UIImage(named: imageName + "_highlighted"), for: .highlighted)

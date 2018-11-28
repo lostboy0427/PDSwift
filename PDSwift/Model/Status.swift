@@ -12,27 +12,43 @@ private let Weibo_Home_Timeline_Url = "https://api.weibo.com/2/statuses/home_tim
 @objcMembers class Status: NSObject {
     
     var created_at : String?
-    var id : Int? = 0
+    var id : NSNumber?
     var text: String?
     var source : String?
     var pic_urls: [[String : String]]?{
         didSet{
             imageUrls = [URL]()
-                for item in pic_urls! {
-                    let url = URL(string: item["thumbnail_pic"]!)
-                    imageUrls?.append(url!)
-                }
+            largeUrls = [URL]()
+            for item in pic_urls! {
+                let imageUrlStr = item["thumbnail_pic"]
+                let imageUrl = URL(string: item["thumbnail_pic"]!)
+                let largeStr = (imageUrlStr! as NSString).replacingOccurrences(of: "thumbnail", with: "large")
+                let largeUrl = URL(string: largeStr)
+                imageUrls?.append(imageUrl!)
+                largeUrls?.append(largeUrl!)
+            }
         }
     }
+    
     var pictureUrls:[URL]?{
         if retweeted_status != nil {
             return retweeted_status?.imageUrls
         }else{
             return imageUrls
         }
-        
     }
+    
+    var largePicUrls:[URL]?{
+        if retweeted_status != nil{
+            return retweeted_status?.largeUrls
+        }
+        return largeUrls
+    }
+    
+    //缩略图
     var imageUrls:[URL]?
+    // 高清大图
+    var largeUrls:[URL]?
     var thumbnail_pic: String?
     var original_pic: String?
     var user: User?
@@ -44,7 +60,9 @@ private let Weibo_Home_Timeline_Url = "https://api.weibo.com/2/statuses/home_tim
         setValuesForKeys(dict)
     }
     
-    override func setValue(_ value: Any?, forUndefinedKey key: String){  }
+    override func setValue(_ value: Any?, forUndefinedKey key: String){
+        
+    }
     
     override func setValue(_ value: Any?, forKey key: String) {
         if key == "user" {
@@ -65,10 +83,10 @@ private let Weibo_Home_Timeline_Url = "https://api.weibo.com/2/statuses/home_tim
             if responseObject == nil {return}
             if let dict = (responseObject as! NSDictionary)["statuses"] as? [[String : AnyObject]] {
                 let statusArr = getUserStatus(status: dict) as [Status]?
-//                cashImageData(statusArr: statusArr, completion)
+                //                cashImageData(statusArr: statusArr, completion)
                 completion(statusArr)
             }else{
-                //  value for key "statuses" 不是字典
+                //  value for key "statuses" 不是字典数组
                 completion(nil)
             }
         }
@@ -94,7 +112,7 @@ private let Weibo_Home_Timeline_Url = "https://api.weibo.com/2/statuses/home_tim
             for url in statusItem.imageUrls! {
                 print("\(url).....")
                 queue.enter()
-
+                
                 SDWebImageManager.shared().imageDownloader?.downloadImage(with: url, options: .continueInBackground, progress: nil, completed: { (_, _, _, _) in
                     print("\(url)下载完成")
                     queue.leave()

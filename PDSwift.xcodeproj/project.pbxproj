@@ -87,6 +87,8 @@
 		04E2A3A921A8D5C3008BA6BF /* PopPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E2A3A821A8D5C3008BA6BF /* PopPresentationController.swift */; };
 		04E2A3AC21A8D65B008BA6BF /* PDHolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E2A3AA21A8D65B008BA6BF /* PDHolderViewController.swift */; };
 		04E2A3AD21A8D65B008BA6BF /* PDHolderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E2A3AB21A8D65B008BA6BF /* PDHolderViewController.xib */; };
+		04E523B221ADDCE8001335A1 /* HomePhotoBrowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E523B121ADDCE8001335A1 /* HomePhotoBrowerViewController.swift */; };
+		04E523B421ADE0D6001335A1 /* PhotoViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E523B321ADE0D6001335A1 /* PhotoViewerController.swift */; };
 		04F52DFB21A9C1730042AD09 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F52DFA21A9C1730042AD09 /* Status.swift */; };
 		04F52DFE21AAE32E0042AD09 /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F52DFD21AAE32E0042AD09 /* NetworkTool.swift */; };
 		04F52E0021AB5D750042AD09 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F52DFF21AB5D750042AD09 /* User.swift */; };
@@ -215,6 +217,8 @@
 		04E2A3A821A8D5C3008BA6BF /* PopPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopPresentationController.swift; sourceTree = "<group>"; };
 		04E2A3AA21A8D65B008BA6BF /* PDHolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDHolderViewController.swift; sourceTree = "<group>"; };
 		04E2A3AB21A8D65B008BA6BF /* PDHolderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDHolderViewController.xib; sourceTree = "<group>"; };
+		04E523B121ADDCE8001335A1 /* HomePhotoBrowerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePhotoBrowerViewController.swift; sourceTree = "<group>"; };
+		04E523B321ADE0D6001335A1 /* PhotoViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerController.swift; sourceTree = "<group>"; };
 		04F52DFA21A9C1730042AD09 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		04F52DFD21AAE32E0042AD09 /* NetworkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		04F52DFF21AB5D750042AD09 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -300,6 +304,8 @@
 				04E2A3A821A8D5C3008BA6BF /* PopPresentationController.swift */,
 				04E2A3AA21A8D65B008BA6BF /* PDHolderViewController.swift */,
 				04E2A3AB21A8D65B008BA6BF /* PDHolderViewController.xib */,
+				04E523B121ADDCE8001335A1 /* HomePhotoBrowerViewController.swift */,
+				04E523B321ADE0D6001335A1 /* PhotoViewerController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -696,6 +702,7 @@
 				04E2A38921A79153008BA6BF /* UIButton+WebCache.m in Sources */,
 				04F52DFB21A9C1730042AD09 /* Status.swift in Sources */,
 				04799DE42198DD4F0078F893 /* BaseTabBarController.swift in Sources */,
+				04E523B421ADE0D6001335A1 /* PhotoViewerController.swift in Sources */,
 				04E2A37621A79153008BA6BF /* UIImage+GIF.m in Sources */,
 				04AF83D921A5F17200B608F2 /* MultipartFormData.swift in Sources */,
 				04F52E0021AB5D750042AD09 /* User.swift in Sources */,
@@ -739,6 +746,7 @@
 				04AF83E821A5F17200B608F2 /* ServerTrustPolicy.swift in Sources */,
 				04E2A3A721A8AC01008BA6BF /* HomeTitleButton.swift in Sources */,
 				046AB90F21A4947C00D1092C /* PDTableViewController.swift in Sources */,
+				04E523B221ADDCE8001335A1 /* HomePhotoBrowerViewController.swift in Sources */,
 				04799DBB2198DB770078F893 /* AppDelegate.swift in Sources */,
 				04E2A36E21A79153008BA6BF /* MKAnnotationView+WebCache.m in Sources */,
 				04AF83DA21A5F17200B608F2 /* NetworkReachabilityManager.swift in Sources */,

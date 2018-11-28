@@ -10,14 +10,14 @@ import UIKit
 
 @objcMembers class User: NSObject {
 
-    var id : Int? = 0
+    var id : NSNumber?
     var name: String?
     var profile_image_url:String?
     // 认证类型 -1：没有认证，0，认证用户，2,3,5: 企业认证，220: 草根明星（达人）
-    var verified_type: Int? = -1
+    var verified_type: NSNumber?
     
     var verifiedImage:UIImage?{
-        switch verified_type {
+        switch verified_type?.intValue {
         case 0: //未认证
             return UIImage(named: "avatar_vip")
         case 2,3,5:
@@ -29,11 +29,20 @@ import UIKit
         }
     }
     
+    var vipLevelImage:String?{
+        if let level = mbrank?.intValue {
+            if level >= 0 && level < 7   {
+                return "common_icon_membership_level\(level)"
+            }
+        }
+        return "common_icon_membership_expired"
+    }
+    
     var avatar_large: String?
     // 1～6 一共6级会员
-    var verified_level:Int? = 0
+    var verified_level:NSNumber?
         
-    var mbrank: Int = 0
+    var mbrank:NSNumber?
     
     init(dict: [String : AnyObject]) {
         super.init()
